@@ -29,13 +29,13 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.get('/:id?', function(request, response){
-	const all = request.all();
+	const all = request.all(); // get all inputs
 	const inputs = request.input();
-	const only = request.only('name', 'level');
-	const except = request.except('age', 'point');
-	const exist = request.exist('name');
-	const name = request.input('name', 'John Doe')
-	const merged = request.merge({level: 14});
+	const only = request.only('name', 'level'); // get only specified inputs
+	const except = request.except('age', 'point'); // get all except specified input
+	const exist = request.exist('name'); //check name for existance
+	const name = request.input('name', 'John Doe'); //get name or default
+	const merged = request.merge({level: 14}); //merge to input
 });
 ```
 
