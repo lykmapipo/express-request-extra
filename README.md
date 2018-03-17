@@ -7,6 +7,8 @@
 
 handy helpers for express request.
 
+*Note: Make sure you use body-parser for desired behaviour*
+
 
 ## Requirements
 
