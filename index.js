@@ -109,7 +109,7 @@ request.merge = function merge(items = {}) {
  * @since  0.1.0
  * @version 0.1.0
  */
-request.defaults = function merge(items = {}) {
+request.defaults = function defaults(items = {}) {
   const all = _.merge({}, this.all());
   const merged = _.defaults({}, all, items);
   return merged;
