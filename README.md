@@ -65,7 +65,7 @@ const all = request.input();
 
 ```
 
-### `request.only():Object`
+### `request.only(...keys):Object`
 Retrieve a subset of items of specified keys from request input data
 
 Example
@@ -74,6 +74,18 @@ Example
 const point = request.only('longitute', 'latitude');
 
 const point = request.only(['longitute', 'latitude']);
+
+```
+
+### `request.except(...keys):Object`
+Retrieve request input data except of specified keys
+
+Example
+```js
+
+const product = request.except('price', 'owner');
+
+const product = request.except(['price', 'owner']);
 
 ```
 
