@@ -43,7 +43,8 @@ app.get('/:id?', function(request, response){
 
 ## API
 
-- `request.all():Object` - Retrieve all request input  data
+### `request.all():Object`
+Retrieve all request input  data
 
 Example
 ```js
@@ -52,7 +53,8 @@ const all = request.all();
 
 ```
 
-- `request.input([key], [default]):Object` - Retrieve an input item from the request input data
+### `request.input([key], [default]):Object`
+Retrieve an input item from the request input data
 
 Example
 ```js
@@ -63,7 +65,8 @@ const all = request.input();
 
 ```
 
-- `request.only():Object` - Retrieve a subset of items of specified keys from request input data
+### `request.only():Object`
+Retrieve a subset of items of specified keys from request input data
 
 Example
 ```js
