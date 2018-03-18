@@ -100,6 +100,23 @@ request.merge = function merge(items = {}) {
 
 
 /**
+ * @name defaults
+ * @type {Function}
+ * @description merge new input into the current request's input data without
+ *              overriding existing
+ * @return {Mixed} merged request input data.
+ * @author lally elias <lallyelias87@mail.com>
+ * @since  0.1.0
+ * @version 0.1.0
+ */
+request.defaults = function merge(items = {}) {
+  const all = _.merge({}, this.all());
+  const merged = _.defaults({}, all, items);
+  return merged;
+};
+
+
+/**
  * @name exists
  * @type {Function}
  * @description determine if the request contains a given input item key.
@@ -108,9 +125,9 @@ request.merge = function merge(items = {}) {
  * @since  0.1.0
  * @version 0.1.0
  */
-request.exists = function exists(key) {
+request.exists = request.has = function exists(key) {
   const all = _.merge({}, this.all());
-  const exist = _.has(all, key);
+  const exist = key ? _.has(all, key) : false;
   return exist;
 };
 

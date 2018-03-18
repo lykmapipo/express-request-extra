@@ -144,6 +144,7 @@ describe('request extra', function () {
         expect(request.exists.name).to.be.equal('exists');
         expect(request.exists.length).to.be.equal(1);
         expect(request.exists('age')).to.be.true;
+        expect(request.has('age')).to.be.true;
       });
 
     it('should be able to check if key exist in request input data',
@@ -152,6 +153,7 @@ describe('request extra', function () {
         expect(request.exists.name).to.be.equal('exists');
         expect(request.exists.length).to.be.equal(1);
         expect(request.exists('level')).to.be.false;
+        expect(request.has('level')).to.be.false;
       });
 
   });

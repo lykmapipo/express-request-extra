@@ -33,10 +33,11 @@ app.use(bodyParser.json())
 app.get('/:id?', function(request, response){
 	const all = request.all(); // get all inputs
 	const inputs = request.input(); // get all inputs if key not specified
+	const name = request.input('name', 'John Doe'); //get name or default
 	const only = request.only('name', 'level'); // get only specified inputs
 	const except = request.except('age', 'point'); // get all except specified input
-	const exist = request.exist('name'); //check name for existance
-	const name = request.input('name', 'John Doe'); //get name or default
+	const exists = request.exists('name'); //check name for existance
+	const has = request.has('name'); //check name for existance
 	const merged = request.merge({level: 14}); //merge to input
 });
 ```
@@ -86,6 +87,46 @@ Example
 const product = request.except('price', 'owner');
 
 const product = request.except(['price', 'owner']);
+
+```
+
+### `request.merge(Object):Object`
+Retrieve request input damerge new input into the current request's input data
+
+Example
+```js
+
+const user = request.merge({level: 1});
+
+```
+
+### `request.defaults(Object):Object`
+merge new input into the current request's input data without overriding existing
+
+Example: use password quest if request has no password input
+```js
+
+const user = request.defaults({password: 'guest'});
+
+```
+
+### `request.exists(key):Boolean`
+Determine if the request contains a given input item key
+
+Example
+```js
+
+const hasName = request.exists('name');
+
+```
+
+### `request.has(key):Boolean`
+Determine if the request contains a given input item key
+
+Example
+```js
+
+const hasName = request.has('name');
 
 ```
 
