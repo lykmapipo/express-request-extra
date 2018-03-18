@@ -32,7 +32,7 @@ app.use(bodyParser.json())
 
 app.get('/:id?', function(request, response){
 	const all = request.all(); // get all inputs
-	const inputs = request.input();
+	const inputs = request.input(); // get all inputs if key not specified
 	const only = request.only('name', 'level'); // get only specified inputs
 	const except = request.except('age', 'point'); // get all except specified input
 	const exist = request.exist('name'); //check name for existance
@@ -40,6 +40,41 @@ app.get('/:id?', function(request, response){
 	const merged = request.merge({level: 14}); //merge to input
 });
 ```
+
+## API
+
+- `request.all():Object` - Retrieve all request input  data
+
+Example
+```js
+
+const all = request.all();
+
+```
+
+- `request.input([key], [default]):Object` - Retrieve an input item from the request input data
+
+Example
+```js
+
+const name = request.input('name', 'John Doe');
+
+const all = request.input();
+
+```
+
+- `request.only():Object` - Retrieve a subset of items of specified keys from request input data
+
+Example
+```js
+
+const point = request.only('longitute', 'latitude');
+
+const point = request.only(['longitute', 'latitude']);
+
+```
+
+
 
 
 ## Testing
