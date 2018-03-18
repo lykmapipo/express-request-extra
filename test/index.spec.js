@@ -148,6 +148,17 @@ describe('request extra', function () {
       expect(request.defaults(defaults)).to.eql(merged);
     });
 
+    it('should be able to merge defaults input data', function () {
+      const defaults = { level: 14 };
+      const merged =
+        _.merge({}, request.params, request.query, request.body,
+          defaults);
+      expect(request.defaults).to.be.a('function');
+      expect(request.defaults.name).to.be.equal('defaults');
+      expect(request.defaults.length).to.be.equal(0);
+      expect(request.defaults(defaults)).to.eql(merged);
+    });
+
     it('should be able to check if key exist in request input data',
       function () {
         expect(request.exists).to.be.a('function');
