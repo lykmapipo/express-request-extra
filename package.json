@@ -1,6 +1,6 @@
 {
   "name": "@lykmapipo/express-request-extra",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "handy helpers for express request",
   "keywords": [
     "lykmapipo",
@@ -38,28 +38,26 @@
     }
   ],
   "devDependencies": {
-    "async": "^2.6.1",
-    "body-parser": "^1.18.3",
+    "body-parser": ">=1.18.3",
     "chai": "^4.2.0",
-    "express": "^4.16.4",
+    "express": ">=4.16.4",
     "faker": "^4.1.0",
     "grunt": "^1.0.3",
     "grunt-contrib-jshint": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-mocha-test": "^0.13.3",
     "jshint-stylish": "^2.2.1",
-    "lodash": "^4.17.11",
     "mocha": "^5.2.0",
     "supertest": "^3.3.0"
   },
   "peerDependencies": {
-    "async": "^2.6.1",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "lodash": "^4.17.11"
+    "body-parser": ">=1.18.3",
+    "express": ">=4.16.4"
   },
   "dependencies": {
-    "auto-parse": "^1.5.1"
+    "async": ">=2.6.1",
+    "auto-parse": ">=1.6.0",
+    "lodash": ">=4.17.11"
   },
   "engines": {
     "node": ">=8.6.0",
