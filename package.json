@@ -47,11 +47,12 @@
     "handlebars": "^4.1.2",
     "jshint-stylish": "^2.2.1",
     "mocha": "^6.1.4",
+    "shelljs": "^0.8.3",
     "supertest": "^4.0.2"
   },
   "dependencies": {
-    "async": ">=3.0.1",
-    "auto-parse": ">=1.7.0",
+    "async": ">=3.1.0",
+    "auto-parse": ">=1.8.0",
     "body-parser": ">=1.19.0",
     "express": ">=4.17.1",
     "lodash": ">=4.17.11"
