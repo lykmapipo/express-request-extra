@@ -1,3 +1,9 @@
+#### 0.1.15 (2019-10-23)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([10bffc21](https://github.com/lykmapipo/express-request-extra/commit/10bffc21225d1cccfcbce0b24aa7bca74145f72f))
+
 #### 0.1.14 (2019-10-10)
 
 ##### Chores
