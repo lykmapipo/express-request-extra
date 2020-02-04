@@ -1,3 +1,9 @@
+#### 0.1.21 (2020-02-04)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([7d2b806b](https://github.com/lykmapipo/express-request-extra/commit/7d2b806bf9798c195b716041ef15e1557fcf184b))
+
 #### 0.1.20 (2020-01-22)
 
 #### 0.1.19 (2020-01-17)
