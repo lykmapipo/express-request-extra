@@ -1,6 +1,6 @@
 {
   "name": "@lykmapipo/express-request-extra",
-  "version": "0.1.35",
+  "version": "0.1.36",
   "description": "handy helpers for express request",
   "keywords": [
     "lykmapipo",
