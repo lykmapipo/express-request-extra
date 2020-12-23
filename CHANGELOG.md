@@ -1,3 +1,11 @@
+#### 0.1.40 (2020-12-23)
+
+##### Chores
+
+* **deps:**
+  *  force latest version & audit fix ([74859e23](https://github.com/lykmapipo/express-request-extra/commit/74859e23d4b66c9edfe925297078564193aad9fa))
+  *  bump ini from 1.3.5 to 1.3.8 ([2ec7e52a](https://github.com/lykmapipo/express-request-extra/commit/2ec7e52a85882bfdbcd45253682fcfef9109b56d))
+
 #### 0.1.39 (2020-09-13)
 
 ##### Chores
