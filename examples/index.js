@@ -1,6 +1,5 @@
 import { merge } from 'lodash';
-import express from 'express';
-import mquery from '../src';
+import express from '../src';
 
 const PORT = 3000;
 
@@ -8,12 +7,11 @@ const PORT = 3000;
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ limit: '2mb' }));
-app.use(mquery());
 
 // handle requests
-app.get('/', (request, response) => {
-  const options = merge({}, request.mquery);
-  response.json(options);
+app.all('/', (request, response) => {
+  const data = merge({}, request.all());
+  response.json(data);
 });
 
 // run express app
