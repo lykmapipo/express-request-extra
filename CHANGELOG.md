@@ -1,3 +1,18 @@
+#### 0.2.0 (2021-08-19)
+
+##### Chores
+
+* **examples:**  add usage ([3e443d01](https://github.com/lykmapipo/express-request-extra/commit/3e443d012a6f45d742e4c47ee6baa2c4e5bbdc79))
+
+##### Documentation Changes
+
+* **readme:**  improve usage ([cb935bf9](https://github.com/lykmapipo/express-request-extra/commit/cb935bf937c342f7f67e6b5c34201e15500912a6))
+*  add community files ([10cce47b](https://github.com/lykmapipo/express-request-extra/commit/10cce47b366b60b43ca0b7310ad2df1bc3dac550))
+
+##### Refactors
+
+*  migrate to es6 ([5292c965](https://github.com/lykmapipo/express-request-extra/commit/5292c96592fa9919b737806e048bc75af9cbbe22))
+
 #### 0.1.41 (2021-02-16)
 
 ##### Chores
