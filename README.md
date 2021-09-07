@@ -1,6 +1,6 @@
 # express-request-extra
 
-[![Build Status](https://travis-ci.com/lykmapipo/express-request-extra.svg?branch=master)](https://travis-ci.com/lykmapipo/express-request-extra)
+[![Build Status](https://app.travis-ci.com/lykmapipo/express-request-extra.svg?branch=master)](https://app.travis-ci.com/lykmapipo/express-request-extra)
 [![Dependencies Status](https://david-dm.org/lykmapipo/express-request-extra.svg)](https://david-dm.org/lykmapipo/express-request-extra)
 [![Coverage Status](https://coveralls.io/repos/github/lykmapipo/express-request-extra/badge.svg?branch=master)](https://coveralls.io/github/lykmapipo/express-request-extra?branch=master)
 [![GitHub License](https://img.shields.io/github/license/lykmapipo/express-request-extra)](https://github.com/lykmapipo/express-request-extra/blob/master/LICENSE)
